@@ -1,0 +1,12 @@
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.brand img {
+  /* width: 6rem; */
+  /* width: 71.1px; */
+  /* height: 24.15px; */
+}

@@ -1,0 +1,133 @@
+.info_section {
+  display: flex;
+  flex-direction: column;
+
+  padding: 4rem;
+  background: var(--color-footer);
+  gap: 7rem;
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.info_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info_heading h1 {
+  max-width: 475px;
+  font-size: 2.5rem;
+}
+.info_heading p {
+  padding-top: 2rem;
+  /* width: 143px; */
+  height: 30px;
+  left: 1107px;
+  top: 1316px;
+  margin-right: 4rem;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 30px;
+
+  /* identical to box height, or 188% */
+
+  color: #ff8a71;
+}
+.info_container {
+  padding-right: 5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 0.1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info_feature .feature_container {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+
+  /* justify-content: space-between; */
+}
+.info_feature .feature_title {
+  align-self: flex-start;
+}
+.info_feature .feature_text {
+  max-width: 1200px;
+  margin-right: 5rem;
+}
+
+.info_container .feature_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 20rem;
+  margin: 2rem 0;
+}
+@media (max-width: 1050px) {
+  .info_feature .feature_container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .info_feature .feature_container .feature_text {
+    max-width: 92%;
+  }
+  .info_section {
+    margin: 2rem;
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .info_section {
+    padding: 2rem;
+  }
+  .info_feature .feature_text {
+    margin-right: 0;
+  }
+  .info_feature .feature_container {
+    gap: 0;
+  }
+}
